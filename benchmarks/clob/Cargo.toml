@@ -1,0 +1,18 @@
+[package]
+name = "clob-bench"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "CLOB percentile benches (p50/p95/p99/p99.9) for two book structures"
+
+[[bin]]
+name = "clob-bench"
+path = "src/main.rs"
+
+[dependencies]
+clob.workspace = true
+protocol-types.workspace = true
+replica.workspace = true
+storage.workspace = true
+tempfile.workspace = true

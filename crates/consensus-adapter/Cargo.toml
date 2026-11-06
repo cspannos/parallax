@@ -1,0 +1,36 @@
+[package]
+name = "consensus-adapter"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Malachite app-channel adapter: ConsensusValue + F in Validate (ADR 0009)."
+
+[dependencies]
+async-trait.workspace = true
+blake3.workspace = true
+crypto-suite.workspace = true
+bytes.workspace = true
+clob.workspace = true
+commitments.workspace = true
+eyre.workspace = true
+malachitebft-app-channel.workspace = true
+malachitebft-codec.workspace = true
+malachitebft-config.workspace = true
+malachitebft-core-consensus.workspace = true
+malachitebft-core-types.workspace = true
+malachitebft-engine.workspace = true
+malachitebft-signing.workspace = true
+malachitebft-signing-ed25519.workspace = true
+malachitebft-sync.workspace = true
+protocol-types.workspace = true
+rand.workspace = true
+replica.workspace = true
+thiserror.workspace = true
+sha2.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tempfile.workspace = true

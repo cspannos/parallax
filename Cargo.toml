@@ -1,0 +1,64 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/protocol-types",
+    "crates/commitments",
+    "crates/clob",
+    "crates/private-state-engine",
+    "crates/storage",
+    "crates/replica",
+    "crates/disclosure",
+    "crates/consensus-adapter",
+    "crates/evm-adapter",
+    "crates/tiny-f",
+    "crates/proof-adapter",
+    "crates/proof-plonky3",
+    "crates/settlement-pipeline",
+    "crates/crypto-suite",
+    "benchmarks/clob",
+    "benchmarks/m4-scale",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[workspace.dependencies]
+protocol-types = { path = "crates/protocol-types" }
+commitments = { path = "crates/commitments" }
+clob = { path = "crates/clob" }
+storage = { path = "crates/storage" }
+replica = { path = "crates/replica" }
+disclosure = { path = "crates/disclosure" }
+consensus-adapter = { path = "crates/consensus-adapter" }
+evm-adapter = { path = "crates/evm-adapter" }
+tiny-f = { path = "crates/tiny-f" }
+proof-adapter = { path = "crates/proof-adapter" }
+proof-plonky3 = { path = "crates/proof-plonky3" }
+crypto-suite = { path = "crates/crypto-suite" }
+blake3 = "1.8"
+sha2 = "0.10"
+proptest = "1.6"
+criterion = "0.5"
+chacha20poly1305 = "0.10"
+tempfile = "3"
+bytes = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time", "net", "io-util"] }
+eyre = "0.6"
+async-trait = "0.1"
+tracing = "0.1"
+thiserror = "2"
+rand = { version = "0.8", features = ["std_rng"] }
+reed-solomon-erasure = "6.0"
+
+malachitebft-app-channel = { package = "arc-malachitebft-app-channel", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }
+malachitebft-core-types = { package = "arc-malachitebft-core-types", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }
+malachitebft-core-consensus = { package = "arc-malachitebft-core-consensus", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }
+malachitebft-codec = { package = "arc-malachitebft-codec", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }
+malachitebft-config = { package = "arc-malachitebft-config", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }
+malachitebft-signing = { package = "arc-malachitebft-signing", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }
+malachitebft-signing-ed25519 = { package = "arc-malachitebft-signing-ed25519", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0", features = ["rand"] }
+malachitebft-sync = { package = "arc-malachitebft-sync", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }
+malachitebft-engine = { package = "arc-malachitebft-engine", git = "https://github.com/circlefin/malachite.git", tag = "v0.8.0" }

@@ -1,0 +1,21 @@
+[package]
+name = "m4-scale"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "M4b/M4c EngineBuilder decide percentiles (validator count × TCP/QUIC)"
+
+[[bin]]
+name = "m4-scale"
+path = "src/main.rs"
+
+[dependencies]
+clob.workspace = true
+consensus-adapter.workspace = true
+eyre.workspace = true
+protocol-types.workspace = true
+crypto-suite.workspace = true
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tempfile.workspace = true
+tokio.workspace = true

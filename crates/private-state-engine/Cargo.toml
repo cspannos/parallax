@@ -1,0 +1,12 @@
+[package]
+name = "private-state-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Native private state engine — CLOB only in M1"
+
+[dependencies]
+clob.workspace = true
+protocol-types.workspace = true
+commitments.workspace = true

@@ -1,0 +1,15 @@
+[package]
+name = "tiny-f"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Tiny fill, match-step, book walk, and mixed-I for M6 proofs (not an 8k book, not height π)."
+
+[dependencies]
+protocol-types.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+clob.workspace = true
+tiny-f-guest-logic = { path = "../../zkvm/spec" }

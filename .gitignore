@@ -1,0 +1,16 @@
+# Build output (workspace and the standalone zkvm workspaces)
+target/
+criterion/
+**/*.rs.bk
+
+# Local environment and proving artifacts
+.env
+.cargo/
+pgo-data.profdata
+**/proof-with-pis.json
+**/proof-with-io.json
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,47 @@
+Parallax
+Copyright 2026 cspannos
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Parallax is independent research. It is not affiliated with, sponsored by or
+endorsed by the authors of the software it uses or studied. See
+docs/PROVENANCE.md.
+
+Parallax is a research prototype. It is not production software, has not
+been audited, and must not be used to hold, move or secure real assets. It is
+provided "AS IS", without warranties or conditions of any kind, and the
+authors accept no liability for any loss, including loss of funds, arising
+from its use (see LICENSE, sections 7 and 8).
+
+-------------------------------------------------------------------------------
+Third-party notices
+-------------------------------------------------------------------------------
+
+zkvm/sp1 was scaffolded from the SP1 project template by Succinct Labs,
+used under the MIT License:
+
+  Copyright (c) 2024 Succinct Labs
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+
+zkvm/risc0 was scaffolded from the RISC Zero project template (Apache-2.0).
+
+Dependencies (Malachite, RISC Zero, SP1, Plonky3, RustCrypto and others) are
+used under their own licenses, recorded in Cargo.lock and each crate's
+metadata.

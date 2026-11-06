@@ -1,0 +1,28 @@
+[package]
+name = "settlement-pipeline"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "End-to-end π pipeline: decided height → proof job → receipt → settlement (ADR 0028)"
+
+[dependencies]
+clob.workspace = true
+commitments.workspace = true
+consensus-adapter.workspace = true
+evm-adapter.workspace = true
+proof-adapter.workspace = true
+protocol-types.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+eyre.workspace = true
+tempfile.workspace = true
+crypto-suite.workspace = true
+
+[features]
+# The e2e demo verifies real RISC Zero receipts (proof-adapter `risc0`).
+risc0 = ["proof-adapter/risc0"]
+
+[[bin]]
+name = "e2e"
+required-features = ["risc0"]

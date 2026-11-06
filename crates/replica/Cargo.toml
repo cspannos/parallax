@@ -1,0 +1,20 @@
+[package]
+name = "replica"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Single-node CLOB replica: WAL then apply (Phase 2, not consensus)"
+
+[[bin]]
+name = "parallax-replica"
+path = "src/bin/parallax-replica.rs"
+
+[dependencies]
+clob.workspace = true
+commitments.workspace = true
+protocol-types.workspace = true
+storage.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

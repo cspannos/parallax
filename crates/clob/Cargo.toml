@@ -1,0 +1,15 @@
+[package]
+name = "clob"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Deterministic in-memory CLOB (limit, cancel, partial fill)"
+
+[dependencies]
+protocol-types.workspace = true
+commitments.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+blake3.workspace = true

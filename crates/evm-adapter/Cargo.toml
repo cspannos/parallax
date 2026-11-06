@@ -1,0 +1,17 @@
+[package]
+name = "evm-adapter"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Privileged SettlementDelta apply: Engine API adapter, not ExEx, not Malachite Value (ADR 0010)."
+
+[dependencies]
+commitments.workspace = true
+protocol-types.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+clob.workspace = true
+consensus-adapter.workspace = true
+tempfile.workspace = true

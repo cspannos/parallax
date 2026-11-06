@@ -1,0 +1,8 @@
+[package]
+version = "0.1.0"
+name = "tiny-f-program"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = { version = "6.8.1" }
+tiny-f-guest-logic = { path = "../../spec" }
